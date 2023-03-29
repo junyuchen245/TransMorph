@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    padding: 100em 0 16em 0;
+    padding: 10em 0 16em 0;
     margin: 0 1em 0 1em;
     font-family: trebuchet ms, sans-serif;
     line-height: 133%;
@@ -47,10 +47,10 @@ code.nowrap {
 }
 
 h1 {
-    margin: 0 0 1.4em 0;
+    margin: 0 0 2.4em 0;
     line-height: 120%;
     text-align: center;
-    font-size: 200%;
+    font-size: 150%;
     font-family: trebuchet ms;
 }
 
