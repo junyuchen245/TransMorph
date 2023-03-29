@@ -1,9 +1,131 @@
-<!DOCTYPE html>
-<html>
-   <head>
-      <title>TransMorph</title>
-   </head>
-   <body>
-      <h1>Welcome to TransMorph! ⭐️</h1>
-   </body>
-</html>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <title>SynthMorph</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="./SynthMorph_files/style.css" />
+        <link rel="icon" href="https://martinos.org/malte/synthmorph/images/favicon.png" />
+        <script async="async" src="./SynthMorph_files/js" />
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-5RNSCC9852');
+        </script>
+    </head>
+    <body data-new-gr-c-s-check-loaded="14.1102.0" data-gr-ext-installed="">
+
+        <ul id="top">
+            <li>
+                <a href="https://github.com/voxelmorph/voxelmorph#SynthMorph">Code</a>
+            </li>
+            <li>
+                <a href="https://martinos.org/malte/synthmorph/#video">Video</a>
+            </li>
+            <li>
+                <a href="https://arxiv.org/abs/2004.10282">arXiv</a>
+            </li>
+            <li>
+                <a href="https://colab.research.google.com/drive/1GjpjkhKGrg5W-cvZVObBo3IoIUwaPZBU?usp=sharing">Demo</a>
+            </li>
+            <li>
+                <a href="https://hub.docker.com/r/freesurfer/synthmorph">Docker</a>
+            </li>
+            <li>
+                <a href="https://doi.org/10.1109/TMI.2021.3116879">Paper</a>
+            </li>
+            <li>
+                <a href="https://martinos.org/malte/synthmorph/#bibtex">Cite</a>
+            </li>
+        </ul>
+
+
+        <h1>SynthMorph: learning image registration without images</h1>
+        <!--<img id="faces" src="./SynthMorph_files/authors.png" alt="Authors" />-->
+        <div id="authors">
+            <a href="https://junyuchen.me/">Junyu Chen</a>,
+            Eric Frey,
+            <br />
+            Yufan He, 
+            William P Segars, 
+            Ye Li, 
+            Yong Du
+        </div>
+
+
+        <div id="journal">
+            IEEE Transactions on Medical Imaging, 41 (3), 543-558, 2022
+        </div>
+
+
+        <h2>New tool</h2>
+        <code class="shade justify">
+            SynthMorph is now available as an easy-to-use tool for affine and
+            deformable registration! We distribute a
+            <a href="https://hub.docker.com/r/freesurfer/synthmorph">containerized version</a> and
+            <a href="https://github.com/freesurfer/freesurfer/tree/dev/mri_synthmorph">code on GitHub</a>.
+        </code>
+        <code class="shade justify">
+            The upcoming FreeSurfer 7.3.4 release will include the tool as
+            `mri_synthmorph`, already part of the
+            <a href="https://surfer.nmr.mgh.harvard.edu/pub/dist/freesurfer/dev/">nightly build</a>.
+        </code>
+        <code class="shade justify">
+            <a href="https://arxiv.org/abs/2301.11329">New preprint</a> on
+            anatomy-aware and acquisition-agnostic registration!
+        </code>
+
+
+        <h2>Summary</h2>
+        <p class="justify">
+            Recent advances in deep learning have dramatically enhanced the
+            accuracy and efficiency of image registration. Yet, the dependency of these
+            algorithms on the specific training data remains an unsolved problem,
+            characterized by inaccurate registration of out-of-distribution images. To
+            address this data dependency, we propose SynthMorph, a strategy for learning
+            contrast-invariant registration without acquired images. By exposing
+            networks to a landscape of unrealistic synthetic data at training, SynthMorph
+            enables unprecedented robustness across a range of real image types and greatly
+            alleviates the need for retraining models.
+        </p>
+
+
+        <h2>Synthetic data</h2>
+        <img class="figure" src="./SynthMorph_files/training.png" alt="SynthMorph training data" />
+
+
+        <h2>Registration accuracy</h2>
+        <img class="figure" src="./SynthMorph_files/accuracy.png" alt="Registration accuracy in terms of Dice overlap" />
+
+
+        <h2 id="video">5-minute talk</h2>
+        <iframe src="./SynthMorph_files/403Kot7-M8g.html" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" />
+
+
+        <h2 id="bibtex">BibTex</h2>
+        <code class="nowrap">
+            @article{hoffmann2022synthmorph,<br />
+                title={SynthMorph: learning contrast-invariant registration without acquired images},<br />
+                author={Hoffmann, Malte and Billot, Benjamin and Greve, Douglas N and Iglesias, Juan Eugenio and Fischl, Bruce and Dalca, Adrian V},<br />
+                journal={IEEE Transactions on Medical Imaging},<br />
+                volume={41},<br />
+                number={3},<br />
+                pages={543--558},<br />
+                year={2022},<br />
+                publisher={IEEE}<br />
+            }
+        </code>
+
+
+        <h2>Acknowledgment</h2>
+        <p class="justify">
+            The authors thank
+            <a href="https://people.csail.mit.edu/dfpace/">Danielle F. Pace</a>
+            for help with computing surface distances. The research project
+            benefitted from computational hardware generously provided by the
+            <a href="https://www.masslifesciences.com/">Massachusetts Life Sciences Center</a>.
+        </p>
+
+    </body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true" /></html>
