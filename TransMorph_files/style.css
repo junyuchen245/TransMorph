@@ -4,7 +4,7 @@ html, body, ul, p {
 }
 
 html {
-    width: min(90ex, 100%);
+    width: min(120ex, 100%);
     margin: 0 auto 0 auto;
 }
 
