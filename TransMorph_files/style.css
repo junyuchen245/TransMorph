@@ -54,23 +54,18 @@ h1 {
     font-family: trebuchet ms;
 }
 
-img#faces {
-    width: 80%;
-    display: block;
-    text-align: center;
-    margin: 0 auto 1.2em auto;
-}
-
 div#authors {
     text-align: center;
     font-style: italic;
+    font-family: trebuchet ms;
 }
 
 div#journal {
     margin: auto;
     text-align: center;
     margin: 2em 0 2em 0;
-    border: 1px solid #e0e0e0;
+    background-color: #EBEBEB;
+    font-family: times new roman;
 }
 
 ul#top {
